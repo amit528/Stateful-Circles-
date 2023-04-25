@@ -1,0 +1,61 @@
+*{
+    background-color: 	#E1F1E1	;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.circleContainer{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    width:90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.circle, .filledCircle{
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    display: inline;
+    cursor: pointer;
+    border-top: 5px solid rgb(255, 157, 0);
+    box-shadow: -3px 13px 15px 0px gray;
+    transition: 0.2s linear;
+}
+.circle:active{
+    transform: scale(1.1);
+}
+
+
+.filledCircle{
+    border-top: 0;
+    background-color: black;
+}
+.filledCircle:active{
+    transform: scale(0.9);
+
+}
+.info{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+}
+button{
+    width:200px;
+    height:40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 30px 0 0 30px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.2s linear;
+
+}
+button:active{
+    transform: rotate(-2deg);
+}
+
+.circlesLength{
+    background-color: yellow;
+    padding:10px;
+}
