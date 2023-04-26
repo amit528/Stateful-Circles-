@@ -16,7 +16,8 @@
     border-radius: 100%;
     display: inline;
     cursor: pointer;
-    border-top: 5px solid rgb(255, 157, 0);
+    border-top: 20px solid coral;
+
     box-shadow: -3px 13px 15px 0px gray;
     transition: 0.2s linear;
 }
@@ -28,6 +29,8 @@
 .filledCircle{
     border-top: 0;
     background-color: black;
+    border-top: 30px solid rgb(255, 157, 0);
+    border-bottom: 30px solid rgb(255, 157, 0);
 }
 .filledCircle:active{
     transform: scale(0.9);

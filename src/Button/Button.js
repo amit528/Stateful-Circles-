@@ -8,7 +8,6 @@ function Button() {
     let [active, setActive] = useState(0);
     const [circles, setCircles] = useState([]);
 
-
     useEffect(() =>{
         let count = 0;
         circles.forEach((elem) =>{
@@ -22,9 +21,9 @@ function Button() {
     const handleCircle = () =>{
         setCount({...count, id : count.id + 1})
         setCircles([...circles, count])
+    }    
 
-    }
-
+    console.log(circles)
   return (
     <div className='body'>
 
@@ -34,8 +33,6 @@ function Button() {
         <h1>Active Circles <span className='circlesLength'> {active} </span></h1>
 
         </div>
-
-
         <CircleContainer circles = {circles} setCircles = {setCircles}/>
 
     </div>
